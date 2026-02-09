@@ -22,5 +22,7 @@ struct ProgressRingView: View {
                 .animation(.easeInOut(duration: 0.3), value: progress)
         }
         .frame(width: size, height: size)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Progress \(Int(min(progress, 1.0) * 100)) percent")
     }
 }

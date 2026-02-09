@@ -145,6 +145,7 @@ struct OnboardingView: View {
                         .foregroundStyle(.white)
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                 }
+                .accessibilityHint("Grants Screen Time access to enable app blocking")
 
                 Button {
                     hasCompletedOnboarding = true
@@ -153,6 +154,7 @@ struct OnboardingView: View {
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
+                .accessibilityHint("Skip authorization and set it up later in settings")
             }
             .padding(.horizontal, 32)
             .padding(.bottom, 48)

@@ -52,6 +52,7 @@ struct CompletionCelebrationView: View {
                     .foregroundStyle(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 14))
             }
+            .accessibilityLabel("Start new dhikr session")
             .padding(.horizontal)
             .padding(.bottom, 32)
         }

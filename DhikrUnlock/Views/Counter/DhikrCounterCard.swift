@@ -58,6 +58,8 @@ struct DhikrCounterCard: View {
         }
         .buttonStyle(.plain)
         .disabled(entry.isCompleted)
+        .accessibilityLabel("\(dhikrType.transliteration), \(entry.count) of \(entry.targetCount)")
+        .accessibilityHint(entry.isCompleted ? "Completed" : "Double tap to increment count")
         .contextMenu {
             Button(role: .destructive) {
                 onReset()

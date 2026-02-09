@@ -2,6 +2,9 @@ import SwiftUI
 import FamilyControls
 import ManagedSettings
 import DeviceActivity
+import os.log
+
+private let logger = Logger(subsystem: "com.dhikrunlock.app", category: "ScreenTime")
 
 class ScreenTimeViewModel: ObservableObject {
     @Published var activitySelection: FamilyActivitySelection {
@@ -84,7 +87,7 @@ class ScreenTimeViewModel: ObservableObject {
         do {
             try center.startMonitoring(activityName, during: schedule)
         } catch {
-            print("Failed to start monitoring: \(error)")
+            logger.error("Failed to start monitoring: \(error.localizedDescription)")
         }
     }
 

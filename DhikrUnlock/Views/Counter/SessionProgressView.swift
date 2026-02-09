@@ -30,6 +30,8 @@ struct SessionProgressView: View {
             }
             .frame(height: 12)
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Session progress, \(Int(progress * 100)) percent\(isCompleted ? ", completed" : "")")
         .padding()
         .background {
             RoundedRectangle(cornerRadius: 16)
