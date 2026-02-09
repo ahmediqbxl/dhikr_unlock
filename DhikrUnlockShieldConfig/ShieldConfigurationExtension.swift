@@ -1,4 +1,5 @@
 import ManagedSettings
+import ManagedSettingsUI
 import UIKit
 
 class ShieldConfigurationExtension: ShieldConfigurationDataSource {
