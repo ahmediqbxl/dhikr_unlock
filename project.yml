@@ -1,0 +1,90 @@
+name: DhikrUnlock
+options:
+  bundleIdPrefix: com.dhikrunlock
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1"
+
+targets:
+  DhikrUnlock:
+    type: application
+    platform: iOS
+    sources:
+      - path: DhikrUnlock
+        excludes:
+          - "**/.DS_Store"
+    entitlements:
+      path: DhikrUnlock/DhikrUnlock.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dhikrunlock.app
+        INFOPLIST_VALUES:
+          CFBundleDisplayName: DhikrUnlock
+          CFBundleShortVersionString: "1.0"
+          CFBundleVersion: "1"
+          UILaunchScreen: {}
+    dependencies:
+      - target: DhikrUnlockMonitor
+      - target: DhikrUnlockShieldConfig
+      - sdk: FamilyControls.framework
+      - sdk: ManagedSettings.framework
+      - sdk: DeviceActivity.framework
+
+  DhikrUnlockMonitor:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: DhikrUnlockMonitor
+        excludes:
+          - "**/.DS_Store"
+      - path: DhikrUnlock/Shared
+        excludes:
+          - "**/.DS_Store"
+    entitlements:
+      path: DhikrUnlockMonitor/DhikrUnlockMonitor.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dhikrunlock.app.monitor
+        INFOPLIST_VALUES:
+          CFBundleDisplayName: DhikrUnlockMonitor
+          CFBundleShortVersionString: "1.0"
+          CFBundleVersion: "1"
+          NSExtension:
+            NSExtensionPointIdentifier: com.apple.deviceactivity.monitor
+            NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).DeviceActivityMonitorExtension
+    dependencies:
+      - sdk: FamilyControls.framework
+      - sdk: ManagedSettings.framework
+      - sdk: DeviceActivity.framework
+
+  DhikrUnlockShieldConfig:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: DhikrUnlockShieldConfig
+        excludes:
+          - "**/.DS_Store"
+      - path: DhikrUnlock/Shared
+        excludes:
+          - "**/.DS_Store"
+    entitlements:
+      path: DhikrUnlockShieldConfig/DhikrUnlockShieldConfig.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dhikrunlock.app.shieldconfig
+        INFOPLIST_VALUES:
+          CFBundleDisplayName: DhikrUnlockShieldConfig
+          CFBundleShortVersionString: "1.0"
+          CFBundleVersion: "1"
+          NSExtension:
+            NSExtensionPointIdentifier: com.apple.shieldconfiguration
+            NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldConfigurationExtension
+    dependencies:
+      - sdk: FamilyControls.framework
+      - sdk: ManagedSettings.framework
