@@ -34,10 +34,12 @@ targets:
         UILaunchScreen: {}
     settings:
       base:
+        PRODUCT_NAME: DhikrUnlock
         PRODUCT_BUNDLE_IDENTIFIER: com.dhikrunlock.app
         GENERATE_INFOPLIST_FILE: NO
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
+        ALWAYS_SEARCH_USER_PATHS: NO
     dependencies:
       - target: DhikrUnlockMonitor
       - target: DhikrUnlockShieldConfig
@@ -72,10 +74,12 @@ targets:
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).DeviceActivityMonitorExtension
     settings:
       base:
+        PRODUCT_NAME: DhikrUnlockMonitor
         PRODUCT_BUNDLE_IDENTIFIER: com.dhikrunlock.app.monitor
         GENERATE_INFOPLIST_FILE: NO
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
+        ALWAYS_SEARCH_USER_PATHS: NO
     dependencies:
       - sdk: FamilyControls.framework
       - sdk: ManagedSettings.framework
@@ -108,10 +112,12 @@ targets:
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldConfigurationExtension
     settings:
       base:
+        PRODUCT_NAME: DhikrUnlockShieldConfig
         PRODUCT_BUNDLE_IDENTIFIER: com.dhikrunlock.app.shieldconfig
         GENERATE_INFOPLIST_FILE: NO
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
+        ALWAYS_SEARCH_USER_PATHS: NO
     dependencies:
       - sdk: FamilyControls.framework
       - sdk: ManagedSettings.framework
