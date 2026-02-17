@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0806DB15A617FAFF5ADCD2EE /* DhikrSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89B0FECBAB3896DF587370 /* DhikrSession.swift */; };
+		0CFF318EA843B93BF53397D0 /* ShieldConfigurationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE6499A351EC6E3D73350E0 /* ShieldConfigurationExtension.swift */; };
+		0E63859F1D0FB248857494AB /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D254EC4C91703E541739A76 /* ManagedSettingsUI.framework */; };
+		11E936A4D0E8739DEBA3CBB4 /* AppGroupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CC530AE378747553E0704 /* AppGroupConstants.swift */; };
+		1497914149A94771F41695A5 /* AppGroupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CC530AE378747553E0704 /* AppGroupConstants.swift */; };
+		1718101C912D01DC1AFD09C6 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D232783075C14B744CF92AE /* FamilyControls.framework */; };
+		180E65663A36315FEECCD0E5 /* SessionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4200F21B45F1671205FBA101 /* SessionRowView.swift */; };
+		1CFB50AEBB28A4EF611C9FDA /* AppGroupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2CC530AE378747553E0704 /* AppGroupConstants.swift */; };
+		1FF5FB280AD5794533EC0134 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CA7B32A1E2FEDC6C61E55D /* ContentView.swift */; };
+		347C04C7BBBE9F55CF4BA99F /* HistoryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D13159E2D0E0BB4A6ABDB /* HistoryTabView.swift */; };
+		3E878CC6F85308BA9726797D /* DhikrGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708521B7C1DB0DD0558941E4 /* DhikrGoal.swift */; };
+		3EDC71028FB00A5149C311EF /* DhikrGoalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B16E01A6D65E49FCF09FC1 /* DhikrGoalEditorView.swift */; };
+		43F32DC952A5C9ADCCFF2FF2 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F002AE78CB3A55412F688 /* ManagedSettings.framework */; };
+		46D636D7ECBDB356D198E682 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D232783075C14B744CF92AE /* FamilyControls.framework */; };
+		4A3319D4D713AFECA0A73DCE /* SessionProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758BCB0F07CFBCB994AB8F2 /* SessionProgressView.swift */; };
+		4E9D89FE06047562E38ADF28 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DDEB4C5B11C71ABE928262 /* DeviceActivityMonitorExtension.swift */; };
+		53DB516CCCB73722532F2466 /* DhikrEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943C8076DB3F704756B9867 /* DhikrEntry.swift */; };
+		54703ECDF4F351A23F4D8BA3 /* CompletionCelebrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCA5E7C04CEAEE0EABD9322 /* CompletionCelebrationView.swift */; };
+		54C316994CBF1C2D5CBB9E99 /* ScheduleEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A73A53F6A39941C0BCF7E1E /* ScheduleEditorView.swift */; };
+		5821761813C3315F75BC450A /* DhikrCounterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B669E5D204FBE9B2E03FA0 /* DhikrCounterCard.swift */; };
+		5BBD72E1B675BEAA6D519AD9 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4854DBA8D6ADAFBC12279C87 /* OnboardingView.swift */; };
+		62065E3A9929E73CB1976A5D /* DhikrCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CD7D375B061918E1AC4167 /* DhikrCounterViewModel.swift */; };
+		63981E0BE81B17B370CDFE83 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8357183941CC65DB4C9F1D15 /* PrivacyInfo.xcprivacy */; };
+		67545373029342C7DC263873 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F002AE78CB3A55412F688 /* ManagedSettings.framework */; };
+		7FD8C4DBA88D390070BBE975 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D971C441530F1185E1A58C4 /* DeviceActivity.framework */; };
+		843F603BC67EE17C4B1E3207 /* SettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E8CFC40F075A1D22CD2920 /* SettingsTabView.swift */; };
+		8C3295916D0F847BDBF83A0C /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9F002AE78CB3A55412F688 /* ManagedSettings.framework */; };
+		A01682CC03027B6A4AA7D9B6 /* FamilyControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D232783075C14B744CF92AE /* FamilyControls.framework */; };
+		A91C94433A9AE98AF4A0A38D /* DhikrUnlockShieldConfig.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E36E0C7395C59A8CD33491A6 /* DhikrUnlockShieldConfig.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AFE043323B86053071DB07F8 /* SharedDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114730B4FCD09F58F200A5C9 /* SharedDataStore.swift */; };
+		C0731FC94297389DC5C147A0 /* SharedDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114730B4FCD09F58F200A5C9 /* SharedDataStore.swift */; };
+		C0FF7C5A3056482134364F2A /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D971C441530F1185E1A58C4 /* DeviceActivity.framework */; };
+		C1FED09B437AFF0107FDD929 /* SharedDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114730B4FCD09F58F200A5C9 /* SharedDataStore.swift */; };
+		C32F232BD7B8043ABFEFA5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB36DC7064051AE791A6C77 /* Assets.xcassets */; };
+		C3FBC7AC3AF819EBAF1589F2 /* CounterTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EFC018E968FE9453A9607 /* CounterTabView.swift */; };
+		C58D5D4A874F865B70722EF1 /* ScreenTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C1ACDE5203793E6063AF14 /* ScreenTimeViewModel.swift */; };
+		CABC1A02BA1F79F44EEF3956 /* DhikrUnlockMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D9CADD3080932C0A7FA468B1 /* DhikrUnlockMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8833007B1F62BCC2401E18B /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFBB4848801B80953EF0144 /* SessionDetailView.swift */; };
+		DE52E985368F809C133DFC79 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9DAE0DD41629EF297C244 /* ProgressRingView.swift */; };
+		F2947280034A3973C7B72F7A /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CD34C1C04D068EDB7C8651 /* HapticManager.swift */; };
+		F34366FEC723427744172CEC /* DhikrType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEF76A8C599648F84C3FF04 /* DhikrType.swift */; };
+		FE8903B27D480F0353390E92 /* DhikrUnlockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E975028A5E4605FF621FF /* DhikrUnlockApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3850D6158D5B383B1F92D046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB714B976358E59819A3882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E116BE327D26BED2B2DB063;
+			remoteInfo = DhikrUnlockMonitor;
+		};
+		894DC91FEB9B02272EF8CD10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB714B976358E59819A3882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CA2344E768D748C680B398;
+			remoteInfo = DhikrUnlockShieldConfig;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E29EE9AB3EDED875844DD4C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CABC1A02BA1F79F44EEF3956 /* DhikrUnlockMonitor.appex in Embed Foundation Extensions */,
+				A91C94433A9AE98AF4A0A38D /* DhikrUnlockShieldConfig.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09B669E5D204FBE9B2E03FA0 /* DhikrCounterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrCounterCard.swift; sourceTree = "<group>"; };
+		114730B4FCD09F58F200A5C9 /* SharedDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataStore.swift; sourceTree = "<group>"; };
+		1D69DA7ECA68946845599F71 /* DhikrUnlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DhikrUnlock.entitlements; sourceTree = "<group>"; };
+		2758BCB0F07CFBCB994AB8F2 /* SessionProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProgressView.swift; sourceTree = "<group>"; };
+		2C9F002AE78CB3A55412F688 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		2D232783075C14B744CF92AE /* FamilyControls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FamilyControls.framework; path = System/Library/Frameworks/FamilyControls.framework; sourceTree = SDKROOT; };
+		2D971C441530F1185E1A58C4 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		36CA7B32A1E2FEDC6C61E55D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A73A53F6A39941C0BCF7E1E /* ScheduleEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEditorView.swift; sourceTree = "<group>"; };
+		3D254EC4C91703E541739A76 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		4200F21B45F1671205FBA101 /* SessionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRowView.swift; sourceTree = "<group>"; };
+		4854DBA8D6ADAFBC12279C87 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		49AE6E750526B2A57CF62E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4CB36DC7064051AE791A6C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		510EFC018E968FE9453A9607 /* CounterTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTabView.swift; sourceTree = "<group>"; };
+		5A89B0FECBAB3896DF587370 /* DhikrSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrSession.swift; sourceTree = "<group>"; };
+		62DDEB4C5B11C71ABE928262 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		68B16E01A6D65E49FCF09FC1 /* DhikrGoalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrGoalEditorView.swift; sourceTree = "<group>"; };
+		708521B7C1DB0DD0558941E4 /* DhikrGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrGoal.swift; sourceTree = "<group>"; };
+		70E8CFC40F075A1D22CD2920 /* SettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabView.swift; sourceTree = "<group>"; };
+		71CD7D375B061918E1AC4167 /* DhikrCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrCounterViewModel.swift; sourceTree = "<group>"; };
+		78C1ACDE5203793E6063AF14 /* ScreenTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeViewModel.swift; sourceTree = "<group>"; };
+		83459A8533702BD2A629BE32 /* DhikrUnlockShieldConfig.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DhikrUnlockShieldConfig.entitlements; sourceTree = "<group>"; };
+		8357183941CC65DB4C9F1D15 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8BE6499A351EC6E3D73350E0 /* ShieldConfigurationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldConfigurationExtension.swift; sourceTree = "<group>"; };
+		8E9E975028A5E4605FF621FF /* DhikrUnlockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrUnlockApp.swift; sourceTree = "<group>"; };
+		96CD34C1C04D068EDB7C8651 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		9C2CC530AE378747553E0704 /* AppGroupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupConstants.swift; sourceTree = "<group>"; };
+		A6A9DAE0DD41629EF297C244 /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		ADFBB4848801B80953EF0144 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		D09AF9490854229AD3E7AA46 /* DhikrUnlockMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DhikrUnlockMonitor.entitlements; sourceTree = "<group>"; };
+		D4CF8822E2B20CD432711F5D /* DhikrUnlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DhikrUnlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82D13159E2D0E0BB4A6ABDB /* HistoryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTabView.swift; sourceTree = "<group>"; };
+		D9CADD3080932C0A7FA468B1 /* DhikrUnlockMonitor.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.extensionkit-extension"; path = DhikrUnlockMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA73215666A0008AAC2FE565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E36E0C7395C59A8CD33491A6 /* DhikrUnlockShieldConfig.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.extensionkit-extension"; path = DhikrUnlockShieldConfig.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E943C8076DB3F704756B9867 /* DhikrEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrEntry.swift; sourceTree = "<group>"; };
+		EAEF76A8C599648F84C3FF04 /* DhikrType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhikrType.swift; sourceTree = "<group>"; };
+		F84CFA8C0E7D0453E513B9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FCCA5E7C04CEAEE0EABD9322 /* CompletionCelebrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionCelebrationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		186CF55C31233A6DE6F38F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1718101C912D01DC1AFD09C6 /* FamilyControls.framework in Frameworks */,
+				43F32DC952A5C9ADCCFF2FF2 /* ManagedSettings.framework in Frameworks */,
+				C0FF7C5A3056482134364F2A /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C0DC6A4C8E582E57FC6B620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01682CC03027B6A4AA7D9B6 /* FamilyControls.framework in Frameworks */,
+				8C3295916D0F847BDBF83A0C /* ManagedSettings.framework in Frameworks */,
+				7FD8C4DBA88D390070BBE975 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B5F70F4AA8D0EBD84393F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D636D7ECBDB356D198E682 /* FamilyControls.framework in Frameworks */,
+				67545373029342C7DC263873 /* ManagedSettings.framework in Frameworks */,
+				0E63859F1D0FB248857494AB /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD7D4E8B484E9D5C3795DF5 /* DhikrUnlockShieldConfig */ = {
+			isa = PBXGroup;
+			children = (
+				83459A8533702BD2A629BE32 /* DhikrUnlockShieldConfig.entitlements */,
+				F84CFA8C0E7D0453E513B9CA /* Info.plist */,
+				8BE6499A351EC6E3D73350E0 /* ShieldConfigurationExtension.swift */,
+			);
+			path = DhikrUnlockShieldConfig;
+			sourceTree = "<group>";
+		};
+		20F05B8E14B76863ED43BCB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4CF8822E2B20CD432711F5D /* DhikrUnlock.app */,
+				D9CADD3080932C0A7FA468B1 /* DhikrUnlockMonitor.appex */,
+				E36E0C7395C59A8CD33491A6 /* DhikrUnlockShieldConfig.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FA0D4C3D9DE10A6AF135E8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CB36DC7064051AE791A6C77 /* Assets.xcassets */,
+				8357183941CC65DB4C9F1D15 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3697C84CD22FB2C68D3D41F8 = {
+			isa = PBXGroup;
+			children = (
+				E0213CB0572A0779888EFF9A /* DhikrUnlock */,
+				9CD6BDA91E026E2D5A7787FE /* DhikrUnlockMonitor */,
+				0FD7D4E8B484E9D5C3795DF5 /* DhikrUnlockShieldConfig */,
+				AAF775A229B0EE81DD7A449F /* Frameworks */,
+				20F05B8E14B76863ED43BCB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		527D53F86CB268C136A10324 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				D82D13159E2D0E0BB4A6ABDB /* HistoryTabView.swift */,
+				ADFBB4848801B80953EF0144 /* SessionDetailView.swift */,
+				4200F21B45F1671205FBA101 /* SessionRowView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5594DFECE1B8C5E8338D7F61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E943C8076DB3F704756B9867 /* DhikrEntry.swift */,
+				708521B7C1DB0DD0558941E4 /* DhikrGoal.swift */,
+				5A89B0FECBAB3896DF587370 /* DhikrSession.swift */,
+				EAEF76A8C599648F84C3FF04 /* DhikrType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A16156B493D190CFB098CF7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				71CD7D375B061918E1AC4167 /* DhikrCounterViewModel.swift */,
+				78C1ACDE5203793E6063AF14 /* ScreenTimeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		70E891676A7003CD6B5451D4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9C2CC530AE378747553E0704 /* AppGroupConstants.swift */,
+				114730B4FCD09F58F200A5C9 /* SharedDataStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		893BADDDA7FC29EC818BC85A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				96CD34C1C04D068EDB7C8651 /* HapticManager.swift */,
+				A6A9DAE0DD41629EF297C244 /* ProgressRingView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		979024EABF25813B71CB4B9B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				68B16E01A6D65E49FCF09FC1 /* DhikrGoalEditorView.swift */,
+				3A73A53F6A39941C0BCF7E1E /* ScheduleEditorView.swift */,
+				70E8CFC40F075A1D22CD2920 /* SettingsTabView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9CD6BDA91E026E2D5A7787FE /* DhikrUnlockMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				62DDEB4C5B11C71ABE928262 /* DeviceActivityMonitorExtension.swift */,
+				D09AF9490854229AD3E7AA46 /* DhikrUnlockMonitor.entitlements */,
+				DA73215666A0008AAC2FE565 /* Info.plist */,
+			);
+			path = DhikrUnlockMonitor;
+			sourceTree = "<group>";
+		};
+		AADD0AC9538DE6D65EA865B7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4854DBA8D6ADAFBC12279C87 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AAF775A229B0EE81DD7A449F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D971C441530F1185E1A58C4 /* DeviceActivity.framework */,
+				2D232783075C14B744CF92AE /* FamilyControls.framework */,
+				2C9F002AE78CB3A55412F688 /* ManagedSettings.framework */,
+				3D254EC4C91703E541739A76 /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8A5794E20F33CBC581EFF29 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				36CA7B32A1E2FEDC6C61E55D /* ContentView.swift */,
+				8E9E975028A5E4605FF621FF /* DhikrUnlockApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEFAB555C6FBBA45ED8A4A77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				893BADDDA7FC29EC818BC85A /* Common */,
+				EB8084758501F4B3A3A14374 /* Counter */,
+				527D53F86CB268C136A10324 /* History */,
+				AADD0AC9538DE6D65EA865B7 /* Onboarding */,
+				979024EABF25813B71CB4B9B /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E0213CB0572A0779888EFF9A /* DhikrUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				B8A5794E20F33CBC581EFF29 /* App */,
+				5594DFECE1B8C5E8338D7F61 /* Models */,
+				2FA0D4C3D9DE10A6AF135E8F /* Resources */,
+				70E891676A7003CD6B5451D4 /* Shared */,
+				5A16156B493D190CFB098CF7 /* ViewModels */,
+				CEFAB555C6FBBA45ED8A4A77 /* Views */,
+				1D69DA7ECA68946845599F71 /* DhikrUnlock.entitlements */,
+				49AE6E750526B2A57CF62E74 /* Info.plist */,
+			);
+			path = DhikrUnlock;
+			sourceTree = "<group>";
+		};
+		EB8084758501F4B3A3A14374 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA5E7C04CEAEE0EABD9322 /* CompletionCelebrationView.swift */,
+				510EFC018E968FE9453A9607 /* CounterTabView.swift */,
+				09B669E5D204FBE9B2E03FA0 /* DhikrCounterCard.swift */,
+				2758BCB0F07CFBCB994AB8F2 /* SessionProgressView.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48CA2344E768D748C680B398 /* DhikrUnlockShieldConfig */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2C828F123499DED46D41BEC /* Build configuration list for PBXNativeTarget "DhikrUnlockShieldConfig" */;
+			buildPhases = (
+				93FF061ED905DA75CCADBF14 /* Sources */,
+				94B5F70F4AA8D0EBD84393F1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DhikrUnlockShieldConfig;
+			packageProductDependencies = (
+			);
+			productName = DhikrUnlockShieldConfig;
+			productReference = E36E0C7395C59A8CD33491A6 /* DhikrUnlockShieldConfig.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5E116BE327D26BED2B2DB063 /* DhikrUnlockMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABB9844B7CEAD50A1076DFD /* Build configuration list for PBXNativeTarget "DhikrUnlockMonitor" */;
+			buildPhases = (
+				16B82504FEA4EF8618FB619D /* Sources */,
+				7C0DC6A4C8E582E57FC6B620 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DhikrUnlockMonitor;
+			packageProductDependencies = (
+			);
+			productName = DhikrUnlockMonitor;
+			productReference = D9CADD3080932C0A7FA468B1 /* DhikrUnlockMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AB3FD57641E925C1B603EF19 /* DhikrUnlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E4F126E33EFC01FD8C9EEFC /* Build configuration list for PBXNativeTarget "DhikrUnlock" */;
+			buildPhases = (
+				D05EA5ECC8B757DCCE2FA844 /* Sources */,
+				AC86853A6D0B176E018D585A /* Resources */,
+				186CF55C31233A6DE6F38F5C /* Frameworks */,
+				3E29EE9AB3EDED875844DD4C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B83FC1FB0F2F3AACB8EEF403 /* PBXTargetDependency */,
+				EDC135273CE6CBBB303749EE /* PBXTargetDependency */,
+			);
+			name = DhikrUnlock;
+			packageProductDependencies = (
+			);
+			productName = DhikrUnlock;
+			productReference = D4CF8822E2B20CD432711F5D /* DhikrUnlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB714B976358E59819A3882 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 9FAE1228DBD85C1F803C367A /* Build configuration list for PBXProject "DhikrUnlock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3697C84CD22FB2C68D3D41F8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3FD57641E925C1B603EF19 /* DhikrUnlock */,
+				5E116BE327D26BED2B2DB063 /* DhikrUnlockMonitor */,
+				48CA2344E768D748C680B398 /* DhikrUnlockShieldConfig */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC86853A6D0B176E018D585A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32F232BD7B8043ABFEFA5E0 /* Assets.xcassets in Resources */,
+				63981E0BE81B17B370CDFE83 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16B82504FEA4EF8618FB619D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFB50AEBB28A4EF611C9FDA /* AppGroupConstants.swift in Sources */,
+				4E9D89FE06047562E38ADF28 /* DeviceActivityMonitorExtension.swift in Sources */,
+				C1FED09B437AFF0107FDD929 /* SharedDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93FF061ED905DA75CCADBF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E936A4D0E8739DEBA3CBB4 /* AppGroupConstants.swift in Sources */,
+				C0731FC94297389DC5C147A0 /* SharedDataStore.swift in Sources */,
+				0CFF318EA843B93BF53397D0 /* ShieldConfigurationExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05EA5ECC8B757DCCE2FA844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1497914149A94771F41695A5 /* AppGroupConstants.swift in Sources */,
+				54703ECDF4F351A23F4D8BA3 /* CompletionCelebrationView.swift in Sources */,
+				1FF5FB280AD5794533EC0134 /* ContentView.swift in Sources */,
+				C3FBC7AC3AF819EBAF1589F2 /* CounterTabView.swift in Sources */,
+				5821761813C3315F75BC450A /* DhikrCounterCard.swift in Sources */,
+				62065E3A9929E73CB1976A5D /* DhikrCounterViewModel.swift in Sources */,
+				53DB516CCCB73722532F2466 /* DhikrEntry.swift in Sources */,
+				3E878CC6F85308BA9726797D /* DhikrGoal.swift in Sources */,
+				3EDC71028FB00A5149C311EF /* DhikrGoalEditorView.swift in Sources */,
+				0806DB15A617FAFF5ADCD2EE /* DhikrSession.swift in Sources */,
+				F34366FEC723427744172CEC /* DhikrType.swift in Sources */,
+				FE8903B27D480F0353390E92 /* DhikrUnlockApp.swift in Sources */,
+				F2947280034A3973C7B72F7A /* HapticManager.swift in Sources */,
+				347C04C7BBBE9F55CF4BA99F /* HistoryTabView.swift in Sources */,
+				5BBD72E1B675BEAA6D519AD9 /* OnboardingView.swift in Sources */,
+				DE52E985368F809C133DFC79 /* ProgressRingView.swift in Sources */,
+				54C316994CBF1C2D5CBB9E99 /* ScheduleEditorView.swift in Sources */,
+				C58D5D4A874F865B70722EF1 /* ScreenTimeViewModel.swift in Sources */,
+				D8833007B1F62BCC2401E18B /* SessionDetailView.swift in Sources */,
+				4A3319D4D713AFECA0A73DCE /* SessionProgressView.swift in Sources */,
+				180E65663A36315FEECCD0E5 /* SessionRowView.swift in Sources */,
+				843F603BC67EE17C4B1E3207 /* SettingsTabView.swift in Sources */,
+				AFE043323B86053071DB07F8 /* SharedDataStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B83FC1FB0F2F3AACB8EEF403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E116BE327D26BED2B2DB063 /* DhikrUnlockMonitor */;
+			targetProxy = 3850D6158D5B383B1F92D046 /* PBXContainerItemProxy */;
+		};
+		EDC135273CE6CBBB303749EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48CA2344E768D748C680B398 /* DhikrUnlockShieldConfig */;
+			targetProxy = 894DC91FEB9B02272EF8CD10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D9DDF05336DC2FAAA1CEAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = DhikrUnlockMonitor/DhikrUnlockMonitor.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DhikrUnlockMonitor/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhikrunlock.app.monitor;
+				PRODUCT_NAME = DhikrUnlockMonitor;
+			};
+			name = Debug;
+		};
+		3B3B1325783BB5BC14201DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = DhikrUnlockMonitor/DhikrUnlockMonitor.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DhikrUnlockMonitor/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhikrunlock.app.monitor;
+				PRODUCT_NAME = DhikrUnlockMonitor;
+			};
+			name = Release;
+		};
+		7B485092919FA7402F692E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		872583D4C6553DC8091E71E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = DhikrUnlockShieldConfig/DhikrUnlockShieldConfig.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DhikrUnlockShieldConfig/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhikrunlock.app.shieldconfig;
+				PRODUCT_NAME = DhikrUnlockShieldConfig;
+			};
+			name = Release;
+		};
+		9C66F71FBBC4DDE69945D4F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = DhikrUnlock/DhikrUnlock.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U4V827X78;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DhikrUnlock/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhikrunlock.app;
+				PRODUCT_NAME = DhikrUnlock;
+			};
+			name = Release;
+		};
+		D16CF830709FF00984F67A0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F32CF6364AB813DE0A3F9C89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = DhikrUnlock/DhikrUnlock.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2U4V827X78;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DhikrUnlock/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhikrunlock.app;
+				PRODUCT_NAME = DhikrUnlock;
+			};
+			name = Debug;
+		};
+		FF446074D6CAF06FC775082B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = DhikrUnlockShieldConfig/DhikrUnlockShieldConfig.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DhikrUnlockShieldConfig/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dhikrunlock.app.shieldconfig;
+				PRODUCT_NAME = DhikrUnlockShieldConfig;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ABB9844B7CEAD50A1076DFD /* Build configuration list for PBXNativeTarget "DhikrUnlockMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D9DDF05336DC2FAAA1CEAD6 /* Debug */,
+				3B3B1325783BB5BC14201DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4E4F126E33EFC01FD8C9EEFC /* Build configuration list for PBXNativeTarget "DhikrUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32CF6364AB813DE0A3F9C89 /* Debug */,
+				9C66F71FBBC4DDE69945D4F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9FAE1228DBD85C1F803C367A /* Build configuration list for PBXProject "DhikrUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B485092919FA7402F692E47 /* Debug */,
+				D16CF830709FF00984F67A0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2C828F123499DED46D41BEC /* Build configuration list for PBXNativeTarget "DhikrUnlockShieldConfig" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF446074D6CAF06FC775082B /* Debug */,
+				872583D4C6553DC8091E71E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFB714B976358E59819A3882 /* Project object */;
+}
